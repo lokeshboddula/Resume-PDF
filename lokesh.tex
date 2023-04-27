@@ -1,0 +1,301 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+%\documentclass[border=0.1cm]{standalone}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Lokesh}{Boddula}{ \urlstyle{same}\href{mailto:lokesh.boddula1@gmail.com}{lokesh.boddula1@gmail.com} |  +91 98660 35659 %\href{https://leetcode.com/lokeshCodes/}{Leetcode}
+`}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Siddhartha Institute of \newline Technology and Sciences}
+\descript{BTech in Computer Science}
+\location{June 2018 | August 2022}
+\location{CGPA 6.9 / 10}
+\sectionsep
+
+\subsection{Kakatiya Junior College}
+\descript{XII Standard}
+\location{June 2015 | May 2018}
+\location{57.6 / 100}
+\sectionsep
+
+\subsection{St. Mary High School}
+\descript{X Standard}
+\location{June 2014 | April 2015}
+\location{CGPA 9.0 / 10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Leetcode:// \href{https://leetcode.com/lokeshCodes/}{\bf @lokeshCodes} \\
+Github:// \href{https://github.com/lokeshboddula}{\bf lokeshboddula} \\
+LinkedIn:// \href{https://www.linkedin.com/in/lokesh-boddula/}{\bf 
+Lokesh Boddula} \\
+GeeksforGeeks://  \href{https://auth.geeksforgeeks.org/user/lokesh_22/}{\bf lokeshBoddula} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Language}
+\textbullet{} Java  \\ 
+\sectionsep
+
+\subsection{Database}
+\textbullet{} MySQL (with JDBC connectivity)\\ 
+%\textbullet{} NoSQL\\
+\sectionsep
+
+\subsection{Web | GUI}
+\textbullet{} JavaSwing \textbullet{} HTML5 \\ \textbullet{} CSS3 \textbullet{} Bootstrap \\
+\sectionsep
+
+\subsection{Developer Tools}
+\textbullet{} Github \textbullet{} VS Code \textbullet{} IntelliJ \textbullet{} Apache NetBeans \textbullet{} MySQL Work Bench \\ \textbullet{} Android Studio
+\sectionsep
+
+\subsection{Others}
+\textbullet{} Data Structures and Algorithms \\ \textbullet{} Operating Systems
+\textbullet{} OOPs \\
+\textbullet{} Computer Networks \textbullet{} DBMS 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interests}
+\textbullet{} Puzzle solving  \\ 
+\textbullet{} Gaming  \\ 
+\textbullet{} Cooking \\
+\textbullet{} Occasional Chess Player \\
+\sectionsep
+
+\section{Languages}
+\textbullet{} English 
+\textbullet{} Hindi 
+\textbullet{} Telugu \\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\runsubsection{{DSA Mentor |}} 
+\descript{ Mind Mentoring in New Dimensions}
+\location{April 2023 - present}
+
+
+\section{Projects}
+
+\runsubsection{{Student Result Portal |}}
+\descript{\href{https://github.com/lokeshboddula/Student-Result-Portal}{Source Code}}
+\location{March 2023 – March 2023 | Window Based Application}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tightemize}
+\item Developed a Student Result Management Portal using Java, Java Swing, SQL, and JDBC, resulting in a 30\% reduction in data entry time. 
+\item Admins can manage 500+ students' data and results, add students and their results, and students can search their results by roll number.
+\item This easy to use application Results in a 40\% increase in student satisfaction. Improves admin productivity by 25\%.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{{Maze Solver |}}
+\descript{\href{https://github.com/lokeshboddula/Maze-Solver}{Source Code}}
+\location{February 2023 – February 2023 | Window Based Application}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Formulated a maze solver which explores a path and hits a wall. Then backtracks to find valid nodes and explores all paths and reaches the end.
+\item  Used JavaSwing (JDK 13) for GUI and JFrame to create the puzzle frame with standard dimensions of 700 x 500.
+
+\item Implemented the DFS traversal to approach the problem to find the possible path to the destination which takes exponential time.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{{
+Real Time Social Networking Application |}}
+\descript{\href{https://github.com/lokeshboddula/Real-Time-Social-Networking-Application}{Source Code}}
+\location{January 2022 – May 2022 | Android Application}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item A dedicated Social Network for college which bridges the communication gap between 1000s of peers and faculty and helps in exchange of ideas.
+\item A light weight App (below 25 mb) with minimalistic User Interface which provides features like posts, chat, groups and maintains user data over Google cloud which is implemented by Firebase. 
+\item Java with Android Studio, Firebase for user management, XML for UI.
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\begin{tabular}{rll}
+2023	  & Badges  &  4+ badges on leetcode with 240+ problems solved.\\
+2023	  & 400 +  & Coding problems solved on the AccioJob platform. \\
+2023      & 4 stars & Java - Level Silver with 4 stars on HackerRank. \\
+
+
+\end{tabular}
+
+
+
+\section{CERTIFICATES}
+
+\runsubsection{}
+\descript{HackerRank | \href{https://drive.google.com/file/d/1dsCWKnKmgs2Qt0LRkvbiBkdrY8kQrRE5/view?usp=sharing}
+{link}}
+\location{Java | 2023}
+% \begin{tightemize}
+    
+% \item  Certified by HackerRank platform for clearing challenges involving problems basic object-oriented programming, data structures, and algorithm problems.
+% \end{tightemize}
+
+
+
+\sectionsep
+
+\runsubsection{}
+\descript{HackerRank | \href{https://drive.google.com/file/d/1O6DrIGhcfiDNwpbD5wzMN6aL6SShW24a/view?usp=sharing}
+{link}}
+\location{Problem Solving | 2023}
+% \begin{tightemize}
+%  \item Certified by HackerRank platform for clearing basic problem-solving challenges on data structures and algorithms.
+%  \end{tightemize}
+\sectionsep
+
+\runsubsection{}
+\descript{QSpiders | \href{https://drive.google.com/file/d/1tbOpTCk-GOVCIzqeSthUllS-DOXz3Asr/view?usp=sharing}
+{link}}
+\location { Core Java and SQL | 2022}
+% \begin{tightemize}
+%  \item Trained in Core Java and SQL and Certified by QSpiders Institute, Hyderabad.
+% \end{tightemize}
+
+\sectionsep
+\section{Declaration}
+All the information mentioned above in the resume is right to the best of my knowledge and belief.
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRA CURRICULUMEXTRA CURRICULUM
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{EXTRA CURRICULUM} 
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tabular}{rll}
+% 2017-2021 & CO-CEO of student organization Dragcon\\
+% 2019-2021  & Judge of Reality show of LPU Splitzvilla Season 2\\
+% 2019-2019 & Senior Coordinator in ISC (Indian Science Congress)\\
+% 2018-2018 & Organized biggest E-Sports tournament of North India "E4E" \\
+% 2012-2012 & Played Nationals in Football-tennis and secured silver medal  \\
+% \end{tabular}
+% \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Languages
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Languages}
+% \textbullet{} English \\
+% \textbullet{} Urdu \\
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
